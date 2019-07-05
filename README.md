@@ -3,4 +3,4 @@ Simple budget application
 
 
 Version 1.3 Example Images
-![Image of budget_1.3](blob:null/1d3a0597-8d38-4ea4-8dd1-12f9256a1d2e)
+![Image of budget_1.3](https://raw.githubusercontent.com/mrios1999/Budgeting-Project/master/Budget%20Project%20Notes/budget_1.3%20-%20Example%20photo.jpg)
