@@ -1,5 +1,4 @@
-# budget_1.3
-Simple budget application
+# Budgeting Project
 
 
 Version 1.3 Example Images
