@@ -16,7 +16,7 @@ import java.text.DecimalFormat;
 import java.text.ParsePosition;
 import java.util.ArrayList;
 
-public class Main extends Application {
+public class Driver extends Application {
 
     private static ArrayList<Summary> activeSummaries;
     private double xOffset = 0;
@@ -67,8 +67,15 @@ public class Main extends Application {
             } catch(IOException f) {
                 e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch(StreamCorruptedException e) {
+            System.out.println("File is corrupt. Rebuilding boot...");
+            new File("summaries.dat").delete();
+            try {
+                rebuildBoot();
+                boot();
+            } catch (IOException f) {
+                f.printStackTrace();
+            }
         }
 
         launch(args);
